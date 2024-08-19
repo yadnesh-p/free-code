@@ -16,10 +16,11 @@ def reverse_words_order_and_swap_cases(sentence):
     print (reverse)
     swappeds = []
     for word in reverse:
-        swapped = ''.join(swap(char) for char in reverse)
+        swapped = ''.join(swap(char) for char in reverse.split())
         print(swapped)
         swappeds.append(swapped)
-        output = ' '.join(swappeds)
+        print (swappeds)
+        output = ''.join(swapped)
         print (output)
         return output  
 if __name__ == '__main__' :
