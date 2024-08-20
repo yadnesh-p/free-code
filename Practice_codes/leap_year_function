@@ -1,0 +1,24 @@
+def is_leap(year):
+    leap = False
+    check = year % 4
+    
+    if check > 0:
+        leap = False
+    else:
+       check1 = year % 100
+       if check1 > 0 :
+           leap = True
+       else:
+           check2 = year % 400
+           if check2 > 0 :
+               leap = False
+           else:
+               leap = True
+                
+    
+    # Write your logic here
+    
+    return leap
+
+year = int(input())
+print(is_leap(year))

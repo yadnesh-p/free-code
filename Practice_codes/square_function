@@ -1,0 +1,11 @@
+import math
+import sys
+import os
+
+def square_func(n):
+    for i in range(n):
+        print (i**2)
+
+if __name__ == '__main__':
+    n = int(input())
+    square_func(n)
