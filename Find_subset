@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    T = int(input())
+    for i in range(T):
+        N_A = int(input())
+        SET_A = set(map(int,input().split()))
+        N_B = int(input())
+        SET_B = set(map(int,input().split()))
+        if SET_A.issubset(SET_B):
+            print ("True")
+        else:
+            print ("False")
+
+
+        
+
+
