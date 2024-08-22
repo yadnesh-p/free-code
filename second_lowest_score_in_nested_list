@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    output = []
+    score_only_list = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        result = [name,score]
+        score_only_list.append(score)
+        output.append(result)
+alpha = sorted(output)
+unique_score_list = list(set(score_only_list))
+second_lowest_score=(sorted(unique_score_list,key=lambda x:float(x))[1])
+print(score_only_list)
+print(second_lowest_score)
+
+for i in alpha:
+    if i[1] == second_lowest_score:
+        print (i[0])
+

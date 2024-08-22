@@ -1,0 +1,11 @@
+if __name__ == "__main__":
+    M = int(input())
+    SET_M = set(map(int,input().split()))
+    N = int(input())
+    SET_N = set(map(int,input().split()))
+    
+    SET_D = sorted(list(SET_M.union(SET_N).difference(SET_M.intersection(SET_N))))
+    
+for i in SET_D:
+    print (i)
+        
