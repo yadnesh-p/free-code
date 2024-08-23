@@ -9,18 +9,3 @@ def print_int(n):
         
 
 #The above code works for single digit numbers only
-
-def new_func(n):
-       result = []
-    for i in range(1,n+1):
-        result.append(i)
-    output="" 
-    for num in result:
-        output += str(num)
-    print (output)
-
-if __name__ == '__main__':
-    n = int(input())
-    print_int(n)
-    new_func(n)
- 
