@@ -14,25 +14,20 @@ import sys
 #  1. INTEGER n
 #  2. INTEGER_ARRAY ar
 #
+from collections import Counter
 
 def sockMerchant(n, ar):
     # Write your code here
-    unique = set(ar)
-    length = 0
-    for i in unique :
-        count = 0
-        for j in range(n):
-            if ar[j] == i :
-                count += 1
-        l = count//2
-    length = length + l
-    return length
-            
+    arr = set(ar)
+    occ = 0
+    for i in arr:
+        count = Counter(ar)
+        occ = occ+count[i]//2
+        print(count)
+    print(occ)
+
+
                 
-                    
-                 
-    
-        
 
 if __name__ == '__main__':
     #fptr = open(os.environ['OUTPUT_PATH'], 'w')

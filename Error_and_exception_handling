@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    T = int(input())
+    for i in range(T):
+        a,b = input().split()
+        c=0
+        try :
+            c = int(a)/int(b)
+            print(int(c))
+        except ValueError as e:
+            print ("Error Code:" , e)
+        except ZeroDivisionError as f:
+            print ("Error Code:" , f)
+        
