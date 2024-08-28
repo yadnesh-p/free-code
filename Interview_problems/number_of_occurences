@@ -18,7 +18,17 @@ from collections import Counter
 
 def repeatedString(s, n):
     # Write your code here
-    return s.count('a')*(n//len(s))+s[:n%len(s)].count('a') 
+    l = len(s)
+    count = 0
+    for i in range(l):
+        if s[i] == 'a':
+            count += 1
+    x = count*(n//l)
+    rem = n%l
+    if rem != 0:
+        a = s[:rem].count('a')
+        x = x+a
+    return x
 
 if __name__ == '__main__':
     #fptr = open(os.environ['OUTPUT_PATH'], 'w')

@@ -19,9 +19,7 @@ def rotLeft(a, d):
     # Write your code here
     #rotating left for right just give negative variable for d
     d = d % len(a)
-    return a[-d:] + a[:-d]
-
-    return 
+    return a[d:] + a[:d]
 
 if __name__ == '__main__':
     #fptr = open(os.environ['OUTPUT_PATH'], 'w')
