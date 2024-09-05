@@ -17,15 +17,12 @@ import sys
 
 def twoStrings(s1, s2):
     # Write your code here
-    for a in s1:
-        print (a)
-        for b in s2:
-            print(b)
-            if a == b:
-                output = "Yes"
-                break
-            else:
-                output = "No"
+    for i in s1:
+        if i in s2:
+            output = "YES"
+            break
+        else:
+            output = "NO"
     return output
                     
 
