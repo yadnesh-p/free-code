@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Welcome to India's Fruit shop</h1>
-	<u1>
+	<ul>
 		<?php
 			$json = file_get_contents('http://fruit-service');
 			$obj = json_decode($json);
